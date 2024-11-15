@@ -2,9 +2,9 @@ module "bigquery" {
   source  = "terraform-google-modules/bigquery/google"
   version = "~> 9.0"
 
-  dataset_id                  = "conversation_logs"
-  dataset_name                = "Conversational agent Logs"
-  description                 = "This is a table to collect Conversation Agents logs."
+  dataset_id                  = "conversational_agents_logs"
+  dataset_name                = "Conversational Agents Logs"
+  description                 = "This is a table to collect Conversational Agents logs."
   project_id                  = "<PROJECT_ID>"
   location                    = "us-central1"
   default_table_expiration_ms = 3600000
